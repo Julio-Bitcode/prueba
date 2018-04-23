@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <!--Elementos que salen en la barra de navegación-->
+    <Page.actionBar>
+        <!--Crea una barra de acción con el titulo que le hemos puesto-->
+        <ActionBar title="  Inicio" icon="" class="action-bar" android.icon="" android.iconVisibility="always">
+        <!--Boton en la barra de navegación para volver para atras-->
+        <NavigationButton text="" android.systemIcon="ic_menu_back" tap="{{ volver }}"/>
+        <!--
+        Añade un item a la barra que llama a una función
+        primera linea es para ios con el número de icono
+        segunda linea es para android con el texto en el item
+        -->
+        <ActionItem tap="{{ volver }}"
+                ios.systemIcon="16" ios.position="right"
+                text="Volver" android.position="popup"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+    <!--Crea Layout para mostrar en la pantalla-->
+    <StackLayout class="p-20">
+        <!--Texto que muestra los mensajes recibidos desde otra pantalla-->
+        <Label text="{{ men1 }}" class="texto1 text-center"/>
+        <Label text="{{ men2 }}" class="texto1 text-center"/>
+        <Label text="{{ men3 }}" class="texto1 text-center"/>
+    </StackLayout>
+</Page>

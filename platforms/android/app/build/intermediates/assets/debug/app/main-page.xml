@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <!--Elementos que salen en la barra de navegación-->
+    <Page.actionBar>
+        <!--Hace una barra de acción con el titulo que le hemos puesto e icono-->
+        <ActionBar title="  Login" icon="" class="action-bar" android.icon="~/images/balonIcono.png" android.iconVisibility="always">
+        <!--Incorpora un iten en la barra de acción que llama a una función-->
+        <ActionItem tap="{{ limpiar }}"
+                ios.systemIcon="16" ios.position="right"
+                text="Limpiar" android.position="popup"></ActionItem>
+        <ActionItem tap="{{ rellenar }}"
+                ios.systemIcon="16" ios.position="right"
+                text="Rellenar" android.position="popup"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+    <!--Crea Layout para mostrar en la pantalla-->
+    <StackLayout class="p-20">
+        <!--Poner una imagen centrada-->
+        <StackLayout orientation="horizontal"
+            android:horizontalAlignment="center">
+            <Image src="~/images/balonIcono.png" stretch="none"></Image>
+        </StackLayout>
+        <!--Texto para escribir directamente para ver en la aplicación-->
+        <Label text="Usuario:" class="texto text-center"/>
+        <!--Texto para pedir al usuario-->
+        <TextField id="usuario" text="{{ usuario }}"/>
+        <Label text="Contraseña:" class="texto text-center"/>
+        <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
+        <!--Boton para llamar a una función-->
+        <Button text="Login" tap="{{ login }}" class="btn"/>
+    </StackLayout>
+</Page>
