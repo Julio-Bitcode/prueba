@@ -12,7 +12,7 @@ function createViewModel(usu, pass) {
     viewModel.set("men2", "Contraseña: " + pass);
     //Muestra en la etiqueta el mensaje más la fecha y la hora
     viewModel.set("men3", "Fecha: " + date.getDate() + "/" + (date.getMonth() + 1) 
-    + "/" + date.getFullYear()) 
+    + "/" + date.getFullYear());
      viewModel.set("men4", "Hora: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
 
     //Funcion que te devuelve a la pantalla antrior
