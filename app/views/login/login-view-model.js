@@ -18,8 +18,13 @@ function createViewModel(usu, pass) {
     //Funcion que te devuelve a la pantalla antrior
     viewModel.volver = function() {
         var topmost = frameModule.topmost();
-        //Comando para volver a la pantalla anterior
-        topmost.goBack();
+        const navigationEntry = {
+            moduleName: "main-page",
+            //Limpia el historial de navegación (true)
+            clearHistory:false,
+            animated: false
+        };
+        topmost.navigate(navigationEntry);
     }
 
     viewModel.actualizar = function() {
