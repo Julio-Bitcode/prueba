@@ -26,5 +26,6 @@
         <Label text="{{ men1 }}" class="texto1 text-center"/>
         <Label text="{{ men2 }}" class="texto1 text-center"/>
         <Label text="{{ men3 }}" class="texto1 text-center"/>
+        <Label text="{{ men4 }}" class="texto1 text-center"/>
     </StackLayout>
 </Page>
