@@ -21,6 +21,19 @@ function createViewModel(usu, pass) {
         topmost.goBack();
     }
 
+    viewModel.actualizar = function() {
+        var topmost = frameModule.topmost();
+        const navigationEntry = {
+            moduleName: "views/login/login",
+            //Limpia el historial de navegación (true)
+            clearHistory:false,
+            //Pasa datos a otra pantalla
+            context: {usu, pass},
+            animated: false
+        };
+        topmost.navigate(navigationEntry);
+    }
+
     return viewModel;
 }
 
