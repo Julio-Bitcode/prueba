@@ -17,33 +17,34 @@ The following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
 .page{
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 
 .action-bar{
-    background-color: coral;
+    color: white;
+    background-color: #FA5858;
     vertical-align: center;
 }
 
 .btn {
     font-size: 20;
-    color: black;
-    background-color: coral;
+    color: white;
+    background-color: #FA5858;
 }
 
 .h1{
     font-size: 30;
-    color: black;
+    color: white;
 }
 
 .texto {
     font-size: 30;
-    color: coral;
+    color: #FA5858;
 }
 
 .texto1 {
     font-size: 20;
-    color: coral;
+    color: #FA5858;
 }
 .h3{
     background:black;
