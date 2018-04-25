@@ -7,7 +7,7 @@ function createViewModel(usu, pass) {
     var date = new Date ();
 
     //Muestra en la etiqueta el mensaje más el usuario
-    viewModel.set("men1", "Hola " + usu);
+    viewModel.set("men1", "Usuario: " + usu);
     //Muestra en la etiqueta el mensaje más la contraseña
     viewModel.set("men2", "Contraseña: " + pass);
     //Muestra en la etiqueta el mensaje más la fecha y la hora
