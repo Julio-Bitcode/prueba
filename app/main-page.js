@@ -11,9 +11,6 @@ JavaScript modules defined in other files.
 */ 
 
 
-/*
-Hola adios
-*/ 
 var createViewModel = require("./main-view-model").createViewModel;
 
 function onNavigatingTo(args) {
