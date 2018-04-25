@@ -12,7 +12,7 @@ JavaScript modules defined in other files.
 
 
 /*
-Hola
+Hola adios
 */ 
 var createViewModel = require("./main-view-model").createViewModel;
 
