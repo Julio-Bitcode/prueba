@@ -24,8 +24,11 @@
     <StackLayout class="p-20">
         <!--Texto que muestra los mensajes recibidos desde otra pantalla-->
         <Label text="{{ men1 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
         <Label text="{{ men2 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
         <Label text="{{ men3 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
         <Label text="{{ men4 }}" class="texto1 text-center"/>
     </StackLayout>
 </Page>
