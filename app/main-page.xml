@@ -7,7 +7,7 @@
         <!--Incorpora un iten en la barra de acción que llama a una función-->
         <ActionItem tap="{{ limpiar }}"
                 ios.systemIcon="16" ios.position="right"
-                text="Limpiar Ya" android.position="popup"></ActionItem>
+                text="Limpiar Ahora" android.position="popup"></ActionItem>
         <ActionItem tap="{{ rellenar }}"
                 ios.systemIcon="16" ios.position="right"
                 text="Rellenar" android.position="popup"></ActionItem>
