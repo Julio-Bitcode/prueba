@@ -42,6 +42,11 @@ components that have the btn class name.
 }
 
 .texto1 {
-    font-size: 25;
+    font-size: 20;
     color: coral;
+}
+.h3{
+    background:black;
+    font-size: 20;
+    color: whitesmoke;
 }
