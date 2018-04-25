@@ -30,5 +30,6 @@
         <!--Boton para llamar a una función-->
         <Button text="Entrar" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
         <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
+        <Button text="Completar" tap="{{ rellenar }}" class="btn btn-rounded-lg"/>
     </StackLayout>
 </Page>
