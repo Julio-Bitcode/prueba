@@ -2,7 +2,8 @@
     <!--Elementos que salen en la barra de navegación-->
     <Page.actionBar>
         <!--Hace una barra de acción con el titulo que le hemos puesto e icono-->
-        <ActionBar title="  Login" icon="" class="action-bar" android.icon="~/images/balonIcono.png" android.iconVisibility="always">
+        <ActionBar title="  Login" icon="" class="action-bar" android.icon="~/images/balonIcono.png"
+         android.iconVisibility="always" ios.icon="~/images/balonIcono.png" ios.iconVisibility="always">
         <!--Incorpora un iten en la barra de acción que llama a una función-->
         <ActionItem tap="{{ limpiar }}"
                 ios.systemIcon="16" ios.position="right"
@@ -27,6 +28,7 @@
         <Label text="Contraseña:" class="texto text-center"/>
         <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
         <!--Boton para llamar a una función-->
-        <Button text="Login" tap="{{ login }}" class="btn"/>
+        <Button text="Login" tap="{{ login }}" class="btn btn-rounded-lg"/>
+        <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
     </StackLayout>
 </Page>

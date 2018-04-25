@@ -23,10 +23,10 @@ function onNavigatingTo(args) {
     const context = page.navigationContext;
 
     //Le doy valor con el contenido que quiero
-    //var usu = context.usu;
-    //var pass = context.pass;
-    var usu = "hola";
-    var pass = "mndo";
+    var usu = context.usu;
+    var pass = context.pass;
+    //var usu = "hola";
+    //var pass = "mndo";
 
     /*
     A page’s bindingContext is an object that should be used to perform

@@ -2,7 +2,7 @@
     <!--Elementos que salen en la barra de navegación-->
     <Page.actionBar>
         <!--Crea una barra de acción con el titulo que le hemos puesto-->
-        <ActionBar title="  Inicio" icon="" class="action-bar" android.icon="" android.iconVisibility="always">
+        <ActionBar title="  Inicio" icon="" class="action-bar" android.icon="~/images/balonIcono.png" android.iconVisibility="always">
         <!--Boton en la barra de navegación para volver para atras-->
         <NavigationButton text="" android.systemIcon="ic_menu_back" tap="{{ volver }}"/>
         <!--
@@ -13,6 +13,10 @@
         <ActionItem tap="{{ volver }}"
                 ios.systemIcon="16" ios.position="right"
                 text="Volver" android.position="popup"></ActionItem>
+
+        <ActionItem tap="{{ actualizar }}"
+                ios.systemIcon="16" ios.position="right"
+                text="Actualizar" android.position="popup"></ActionItem>
         </ActionBar>
     </Page.actionBar>
 
@@ -20,7 +24,11 @@
     <StackLayout class="p-20">
         <!--Texto que muestra los mensajes recibidos desde otra pantalla-->
         <Label text="{{ men1 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
         <Label text="{{ men2 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
         <Label text="{{ men3 }}" class="texto1 text-center"/>
+        <StackLayout class="hr-dark m-10"></StackLayout>
+        <Label text="{{ men4 }}" class="texto1 text-center"/>
     </StackLayout>
 </Page>
