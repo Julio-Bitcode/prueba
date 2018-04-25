@@ -110,4 +110,5 @@ function usuarioArray(usu, pass){
 
     return arrayVali;
 }
+
 exports.createViewModel = createViewModel;
