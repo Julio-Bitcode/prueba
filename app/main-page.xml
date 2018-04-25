@@ -28,7 +28,7 @@
         <Label text="Contraseña:" class="texto text-center"/>
         <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
         <!--Boton para llamar a una función-->
-        <Button text="Entrar" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
+        <Button text="Adios" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
         <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
     </StackLayout>
 </Page>
