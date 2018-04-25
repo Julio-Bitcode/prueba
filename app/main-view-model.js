@@ -45,7 +45,7 @@ function createViewModel(page) {
     var pass = "";
     
     //Funcion para el login
-    viewModel.login = function() {
+    viewModel.entrar = function() {
         //Recoge los datos que el usuario pone
         usu = page.getViewById("usuario").text;
         pass = page.getViewById("contraseña").text;
