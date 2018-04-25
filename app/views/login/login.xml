@@ -14,9 +14,9 @@
                 ios.systemIcon="16" ios.position="right"
                 text="Volver" android.position="popup"></ActionItem>
 
-        <ActionItem tap="{{ actualizar }}"
+        <ActionItem tap="{{ recargar }}"
                 ios.systemIcon="16" ios.position="right"
-                text="Actualizar" android.position="popup"></ActionItem>
+                text="Recargar" android.position="popup"></ActionItem>
         </ActionBar>
     </Page.actionBar>
 

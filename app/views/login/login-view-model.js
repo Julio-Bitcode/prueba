@@ -27,7 +27,7 @@ function createViewModel(usu, pass) {
         topmost.navigate(navigationEntry);
     }
 
-    viewModel.actualizar = function() {
+    viewModel.recargar = function() {
         var topmost = frameModule.topmost();
         const navigationEntry = {
             moduleName: "views/login/login",
