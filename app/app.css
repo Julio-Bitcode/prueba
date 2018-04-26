@@ -30,6 +30,7 @@ components that have the btn class name.
     font-size: 20;
     color: white;
     background-color: #FA5858;
+    font-weight: bold;
 }
 
 .btn-pad{
