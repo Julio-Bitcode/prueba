@@ -13,24 +13,29 @@
                 text="Rellenar" android.position="popup"></ActionItem>
         </ActionBar>
     </Page.actionBar>
-
-    <!--Crea Layout para mostrar en la pantalla-->
-    <StackLayout class="p-20">
-        <!--Poner una imagen centrada-->
-        <StackLayout orientation="horizontal"
-            android:horizontalAlignment="center">
-            <Image src="~/images/balonIcono.png" stretch="none"></Image>
+    <ScrollView orientation="vertical">
+        <!--Crea Layout para mostrar en la pantalla-->
+        <StackLayout class="p-20">
+            <!--Poner una imagen centrada-->
+            <StackLayout orientation="horizontal"
+                android:horizontalAlignment="center">
+                <Image src="~/images/balonIcono.png" stretch="none"></Image>
+            </StackLayout>
+            <!--Texto para escribir directamente para ver en la aplicación-->
+            <Label text="Usuario:" class="texto text-center"/>
+            <!--Texto para pedir al usuario-->
+            <TextField id="usuario" text="{{ usuario }}"/>
+            <Label text="Contraseña:" class="texto text-center"/>
+            <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
+            <Label text="Fecha de nacimiento:" class="texto text-center"/>
+            <DatePicker (loaded)="onPickerLoaded($event)" (dateChange)="onDateChanged($event)" 
+                (dayChange)="onDayChanged($event)" (monthChange)="onMonthChanged($event)"
+                (yearChange)="onYearChanged($event)" verticalAlignment="center"></DatePicker>
+            <!--Boton para llamar a una función-->
+            <Button text="Entrar" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
+            <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
+            <Button text="Completar" tap="{{ rellenar }}" class="btn btn-rounded-lg"/>
+            <Button text="Limpiar" tap="{{ limpiar }}" class="btn btn-rounded-lg"/>
         </StackLayout>
-        <!--Texto para escribir directamente para ver en la aplicación-->
-        <Label text="Usuario:" class="texto text-center"/>
-        <!--Texto para pedir al usuario-->
-        <TextField id="usuario" text="{{ usuario }}"/>
-        <Label text="Contraseña:" class="texto text-center"/>
-        <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
-        <!--Boton para llamar a una función-->
-        <Button text="Entrar" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
-        <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
-        <Button text="Completar" tap="{{ rellenar }}" class="btn btn-rounded-lg"/>
-        <Button text="Limpiar" tap="{{ limpiar }}" class="btn btn-rounded-lg"/>
-    </StackLayout>
+    </ScrollView>
 </Page>
