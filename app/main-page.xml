@@ -15,7 +15,7 @@
     </Page.actionBar>
     <ScrollView orientation="vertical">
         <!--Crea Layout para mostrar en la pantalla-->
-        <StackLayout class="p-20">
+        <StackLayout class="p-20 ">
             <!--Poner una imagen centrada-->
             <StackLayout orientation="horizontal"
                 android:horizontalAlignment="center">
@@ -30,10 +30,14 @@
             <Label text="Fecha de nacimiento:" class="texto text-center"/>
             <DatePicker id="fecha" load="onPickerLoaded"></DatePicker>
             <!--Boton para llamar a una función-->
-            <Button text="Entrar" tap="{{ entrar }}" class="btn btn-rounded-lg"/>
-            <Button text="Registro" tap="{{ registrar }}" class="btn btn-rounded-lg"/>
-            <Button text="Completar" tap="{{ rellenar }}" class="btn btn-rounded-lg"/>
-            <Button text="Limpiar" tap="{{ limpiar }}" class="btn btn-rounded-lg"/>
+            <WrapLayout  columns="auto,auto" rows="auto" row="1" col="2" horizontalAlignment="center">
+                <Button text="Entrar" tap="{{ entrar }}" col="0" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginRight="5"/>
+                <Button text="Registro" tap="{{ registrar }}" col="1" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginLeft="5"/>
+            </WrapLayout>
+            <WrapLayout  columns="auto,auto" row="1" col="2" horizontalAlignment="center">
+                <Button text="Completar" tap="{{ rellenar }}" col="0" row="0" verticalAlignment="center" wight="auto" class="btn btn-rounded-lg btn-pad" marginRight="5"/>
+                <Button text="Limpiar" tap="{{ limpiar }}" col="1" row="0" verticalAlignment="center" wight="auto" class="btn btn-rounded-lg btn-pad" marginLeft="5"/>
+            </WrapLayout>
         </StackLayout>
     </ScrollView>
 </Page>
