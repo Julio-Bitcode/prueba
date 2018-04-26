@@ -25,8 +25,8 @@
             <Label text="Usuario:" class="texto text-center"/>
             <!--Texto para pedir al usuario-->
             <TextField id="usuario" text="{{ usuario }}"/>
-            <Label text="Contraseña:" class="texto text-center"/>
-            <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
+            <Label text="Contraseña:" class="texto text-center" />
+            <TextField id="contraseña" text="{{ contraseña }}" secure="true" keyboardType="number" />
             <Label text="Fecha de nacimiento:" class="texto text-center"/>
             <DatePicker id="fecha" load="onPickerLoaded"></DatePicker>
             <!--Boton para llamar a una función-->
