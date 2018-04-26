@@ -2,6 +2,7 @@ var Observable = require("data/observable").Observable;
 var ObservableArray = require("data/observable-array").ObservableArray;
 var frameModule = require("ui/frame");
 var dialogs = require("ui/dialogs");
+var DatePicker = require("ui/date-picker").DatePicker;
 var arrayUsu = new ObservableArray(["admin", "usuario", "usuario1", "usuario2"]);
 var arrayPass = new ObservableArray(["12345", "123456", "1234567", "12345678"]);
 
@@ -41,14 +42,25 @@ function getMessage(usu, pass) {
 //Prueba para entrar en otra panatalla
 function createViewModel(page) {
     var viewModel = new Observable();
+    var datePicker = new DatePicker()
     var usu = "";
     var pass = "";
     
+
+    viewModel.onPickerLoaded = function() {
+        console.log("entraaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    }
+
     //Funcion para el login
     viewModel.entrar = function() {
         //Recoge los datos que el usuario pone
         usu = page.getViewById("usuario").text;
         pass = page.getViewById("contraseña").text;
+        var dia = datePicker.day;
+        var mes = datePicker.month - 1;
+        var año = datePicker.year;
+        var fecha = new Date(año, mes, dia);
+        console.log(fecha);
         //Llama a una función para validar
         this.set("message", getMessage(usu, pass));
     }

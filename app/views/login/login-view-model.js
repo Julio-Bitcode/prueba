@@ -4,7 +4,7 @@ var frameModule = require("ui/frame");
 //Prueba para volver a la pantalla anterior
 function createViewModel(usu, pass) {
     var viewModel = new Observable();
-    var date = new Date ();
+    var date = new Date();
 
     //Muestra en la etiqueta el mensaje más el usuario
     viewModel.set("men1", "Usuario: " + usu);

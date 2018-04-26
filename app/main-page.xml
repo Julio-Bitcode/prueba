@@ -28,9 +28,7 @@
             <Label text="Contraseña:" class="texto text-center"/>
             <TextField id="contraseña" text="{{ contraseña }}" secure="true"/>
             <Label text="Fecha de nacimiento:" class="texto text-center"/>
-            <DatePicker (loaded)="onPickerLoaded($event)" (dateChange)="onDateChanged($event)" 
-                (dayChange)="onDayChanged($event)" (monthChange)="onMonthChanged($event)"
-                (yearChange)="onYearChanged($event)" verticalAlignment="center"></DatePicker>
+            <DatePicker id="fecha" load="onPickerLoaded"></DatePicker>
             <!--Boton para llamar a una función-->
             <WrapLayout  columns="auto,auto" rows="auto" row="1" col="2" horizontalAlignment="center">
                 <Button text="Entrar" tap="{{ entrar }}" col="0" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginRight="5"/>
