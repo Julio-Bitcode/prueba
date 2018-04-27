@@ -33,8 +33,8 @@
         <Label text="{{ men4 }}" class="texto1 text-center font-italic p-15"/>
         <StackLayout class="hr-dark m-10"></StackLayout>
         <WrapLayout  columns="auto,auto" rows="auto" row="1" col="2" horizontalAlignment="center">
-                <Button text="Volver" tap="{{ volver }}" col="0" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginRight="5"/>
-                <Button text="Recargar" tap="{{ recargar }}" col="1" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginLeft="5"/>
-            </WrapLayout>
+            <Button text="Volver" tap="{{ volver }}" col="0" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginRight="5"/>
+            <Button text="Recargar" tap="{{ recargar }}" col="1" row="0" verticalAlignment="center" class="btn btn-rounded-lg btn-pad" marginLeft="5"/>
+        </WrapLayout>
     </StackLayout>
 </Page>
